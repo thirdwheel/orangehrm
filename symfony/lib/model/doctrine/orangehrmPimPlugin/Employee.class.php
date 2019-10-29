@@ -29,6 +29,7 @@ class Employee extends PluginEmployee {
 
     const GENDER_MALE = 1;
     const GENDER_FEMALE = 2;
+    const GENDER_NONBIN = 3;
 
     const UNMARRIED = 'Unmarried';
     const MARRIED = 'Married';

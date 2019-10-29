@@ -593,10 +593,10 @@ class Employee implements Serializable
 
         if ($employee->getEmpGender() == 1) {
             $this->setGender('Male');
-        } else {
-            if ($employee->getEmpGender() == 2) {
-                $this->setGender('Female');
-            }
+        } else if ($employee->getEmpGender() == 2) {
+            $this->setGender('Female');
+        } else if ($employee->getEmpGender() == 3) {
+            $this->setGender('Non-Binary');
         }
 
         $this->setLicenseNo($employee->getLicenseNo());
